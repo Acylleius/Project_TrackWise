@@ -11,3 +11,7 @@ input[type="text"], input[type="password"], input[type="email"] {
 .actions { margin-top:12px; display:flex; gap:12px; align-items:center; }
 .link { color:#2563eb; text-decoration:none; font-size:.95rem; }
 @media (max-width:480px){ .wrap{padding:12px} }
+
+.dashboard-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:12px; margin-top:12px; }
+.dashboard-grid .card { background:#fff; padding:12px; border-radius:6px; box-shadow:0 2px 8px rgba(0,0,0,0.04); }
+
