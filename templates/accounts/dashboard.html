@@ -1,0 +1,19 @@
+<!-- templates/accounts/dashboard.html -->
+{% extends "base.html" %}
+{% block title %}Dashboard — Auth App{% endblock %}
+{% block content %}
+  <section class="card auth-card">
+    <h2>Welcome, <span id="username-display">User</span></h2>
+    <p>This is a mock dashboard (frontend only).</p>
+
+    <div class="dashboard-grid">
+      <div class="card">Profile</div>
+      <div class="card">Settings</div>
+      <div class="card">Recent activity</div>
+    </div>
+
+    <div class="actions">
+      <a href="/accounts/logout/" class="link">Logout</a>
+    </div>
+  </section>
+{% endblock %}
