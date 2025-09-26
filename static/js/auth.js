@@ -27,4 +27,18 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
+
+  // inside DOMContentLoaded after loginForm...
+const registerForm = document.getElementById('register-form');
+if (registerForm) {
+  registerForm.addEventListener('submit', (e) => {
+    const p1 = document.getElementById('reg-password1').value;
+    const p2 = document.getElementById('reg-password2').value;
+    if (p1 !== p2) {
+      e.preventDefault();
+      alert('Passwords do not match');
+    }
+  });
+}
+
 });
